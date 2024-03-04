@@ -10,3 +10,5 @@ Route::get('/', function () {
 
 
 Route::get('/table', [TableController::class, 'table']);
+
+Route::get('/form', [TableController::class, 'form']);
