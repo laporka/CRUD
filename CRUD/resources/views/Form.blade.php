@@ -285,7 +285,8 @@ a.ssolink {
           <div class="formbg">
             <div class="formbg-inner padding-horizontal--48">
               <span class="padding-bottom--15">Sign in to your account</span>
-              <form id="stripe-login">
+              <form id="stripe-login" action="{{ route('table.add') }}" method="post">
+                @csrf
                 <div class="field padding-bottom--24">
                   <label for="email">Email</label>
                   <input type="email" name="email">

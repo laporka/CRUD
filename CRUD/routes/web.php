@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TableController;
+use App\Http\Controllers\CreateController;
 
 
 Route::get('/', function () {
@@ -12,3 +13,5 @@ Route::get('/', function () {
 Route::get('/table', [TableController::class, 'table']);
 
 Route::get('/form', [TableController::class, 'form']);
+
+Route::post('/form', [CreateController::class, 'actionCreate'] )->name('table.add');
