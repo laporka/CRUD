@@ -15,3 +15,5 @@ Route::get('/table', [TableController::class, 'table']);
 Route::get('/form', [TableController::class, 'form']);
 
 Route::post('/form', [CreateController::class, 'actionCreate'] )->name('table.add');
+
+Route::get('/getDB', [CreateController::class, 'myFunc']);
